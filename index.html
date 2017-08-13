@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <!-- Have separate pages in nav bar -->
 
+<!-- pause button -->
+<!-- https://codepen.io/dudleystorey/pen/knqyK -->
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -11,7 +13,7 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/animate.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 	<link rel="stylesheet" type="text/css" href="css/demo.css" />
@@ -39,14 +41,14 @@
 				</button>
 				<a class="navbar-brand" href="index.html"><span>Mahdi Shadkam-Farrokhi</span></a>
 			</div>
-			<div class="navbar-collapse collapse">							
+			<div class="navbar-collapse collapse">
 				<div class="menu">
 					<ul class="nav nav-tabs" role="tablist">
 						<li role="presentation" class="active"><a href="index.html">Home</a></li>
-						<li role="presentation"><a href="services.html">About</a></li>
-						<li role="presentation"><a href="#">Resume</a></li>
-						<li role="presentation"><a href="#">Portfolio</a></li>
-						<li role="presentation"><a href="#">Contact</a></li>						
+						<li role="presentation" ><a href="services.html">About</a></li>
+						<li role="presentation" ><a href="#">Resume</a></li>
+						<li role="presentation" ><a href="#">Portfolio</a></li>
+						<li role="presentation" ><a href="#">Contact</a></li>						
 					</ul>
 				</div>
 			</div>			
@@ -75,9 +77,9 @@
 
 		<!-- Basic parallax -->
 		 <div class="para">
-			<video playsinline autoplay muted loop>
+			<!-- <video playsinline autoplay muted loop>
 				<source src="assets/mahdi.mp4" type="video/mp4">
-			</video>	 
+			</video>	  -->
 		</div> 
 
 		<div class="nonVid">
@@ -100,9 +102,9 @@
 					<div class="box">
 						<div class="col-md-4">
 							<div class="wow bounceIn" data-wow-offset="0" data-wow-delay="0.4s">
-								<h4>Coding Tutorials</h4>					
+								<h4>Curriculum Designer</h4>					
 									<div class="icon">
-										<i class="fa fa-heart-o fa-3x"></i>
+										<i class="fa fa-paint-brush fa-3x"></i>
 									</div>						
 								<p>Lorem ipsum dolor sit amet consectetur adipiscing elit Cras suscipit arcu libero</p>
 								<div class="ficon">
@@ -113,9 +115,9 @@
 						
 						<div class="col-md-4">
 							<div class="wow bounceIn" data-wow-offset="0" data-wow-delay="1.0s">
-								<h4>Tutoring</h4>
+								<h4>Teacher</h4>
 								<div class="icon">
-									<i class="fa fa-desktop fa-3x"></i>
+									<i class="fa fa-graduation-cap fa-3x"></i>
 								</div>
 								<p>Lorem ipsum dolor sit amet consectetur adipiscing elit Cras suscipit arcu libero</p>
 								<div class="ficon">
@@ -126,9 +128,9 @@
 						
 						<div class="col-md-4">
 							<div class="wow bounceIn" data-wow-offset="0" data-wow-delay="1.6s">
-								<h4>How can Mahdi help you?</h4>
+								<h4>Web Developer</h4>
 								<div class="icon">
-									<i class="fa fa-location-arrow fa-3x"></i>
+									<i class="fa fa-desktop fa-3x"></i>
 								</div>
 								<p>Lorem ipsum dolor sit amet consectetur adipiscing elit Cras suscipit arcu libero</p>
 								<div class="ficon">
@@ -142,17 +144,15 @@
 				</div>
 			</div>
 			
-			<!-- center para -->
+			<!-- center para SKILLS -->
 			<div class="container disc">
 				<div class="row">
 					<div class="col-md-6 col-md-offset-3">
 						<div class="text-center">
-							<h2>Discover More</h2>
-							<p>Lorem ipsum dolor sit amet consectetur adipiscing elit Cras suscipit arcu<br>
-							vestibulum volutpat libero sollicitudin vitae Curabitur ac aliquam <br>
-							</p>
+							<h2>Skills</h2>
 						</div>
 						<hr>
+						<div class="skills"></div>
 					</div>
 				</div>
 			</div>
@@ -161,28 +161,28 @@
 			<div class="picGrid">
 				<div class="content">
 					<div class="grid">
-						<figure class="effect-zoe">
-							<img src="img/25.jpg" alt="img25"/>
+						<figure class="effect-zoe wow bounceInLeft" data-wow-delay='0.6s'>
+							<img src="assets/Alg.jpg" alt="img25"/>
 							<figcaption>
-								<h2>Project: <span>Emily</span></h2>
+								<h2>Lesson: <span>Algorithms</span> </h2>
 								<p class="icon-links">
-									<a href="#"><span class="icon-heart"></span></a>
+									<!-- <a href="#"><span class="icon-heart"></span></a> -->
 									<a href="#"><span class="icon-eye"></span></a>
-									<a href="#"><span class="icon-paper-clip"></span></a>
+									<!-- <a href="#"><span class="icon-paper-clip"></span></a> -->
 								</p>
-								<p class="description">Learn more about Mahdi's Baby, Emily!</p>
+								<p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum beatae aspernatur sunt est laboriosam commodi rem ut? Reprehenderit unde, rem, nostrum consequatur ea minus optio odit vitae mollitia, incidunt corrupti!</p>
 							</figcaption>			
 						</figure>
-						<figure class="effect-zoe">
-							<img src="img/26.jpg" alt="img26"/>
+						<figure class="effect-zoe wow bounceInRight" data-wow-delay='0.8s'>
+							<img src="assets/sec1.jpg" alt="img26"/>
 							<figcaption>
-								<h2>Project: <span>ASC</span></h2>
+								<h2>Lesson: <span>OAuth</span></h2>
 								<p class="icon-links">
-									<a href="#"><span class="icon-heart"></span></a>
+									<!-- <a href="#"><span class="icon-heart"></span></a> -->
 									<a href="#"><span class="icon-eye"></span></a>
-									<a href="#"><span class="icon-paper-clip"></span></a>
+									<!-- <a href="#"><span class="icon-paper-clip"></span></a> -->
 								</p>
-								<p class="description">Learn more about Mahdi's job at All Star Code!</p>
+								<p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, dolores quia voluptas incidunt, porro eligendi velit perspiciatis consequuntur illo assumenda sunt. Perspiciatis velit non doloremque expedita aut vel necessitatibus consequatur eligendi dolores sint accusantium, atque voluptas deleniti odio, id aliquam?</p>
 							</figcaption>			
 						</figure>
 					</div>
@@ -190,28 +190,28 @@
 				
 				<div class="content">
 					<div class="grid">
-						<figure class="effect-zoe">
-							<img src="img/27.jpg" alt="img27"/>
+						<figure class="effect-zoe wow bounceInLeft" data-wow-delay='1.0s'>
+								<img src="assets/1.jpg" alt="img30"/>
 							<figcaption>
-								<h2>Project: <span>Curric.</span></h2>
+								<h2>Academic: <span>Death App</span></h2>
 								<p class="icon-links">
-									<a href="#"><span class="icon-heart"></span></a>
+									<!-- <a href="#"><span class="icon-heart"></span></a> -->
 									<a href="#"><span class="icon-eye"></span></a>
-									<a href="#"><span class="icon-paper-clip"></span></a>
+									<!-- <a href="#"><span class="icon-paper-clip"></span></a> -->
 								</p>
-								<p class="description">Learn more about Mahdi's Curriculum!</p>
+								<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis animi, quasi molestias quod ipsum architecto aspernatur facilis sed et ullam dolores eos ea pariatur error provident exercitationem. Id quisquam impedit, numquam amet nostrum modi minus, facere explicabo blanditiis itaque esse.</p>
 							</figcaption>			
 						</figure>
-						<figure class="effect-zoe">
-							<img src="img/30.jpg" alt="img30"/>
+						<figure class="effect-zoe wow bounceInRight" data-wow-delay='1.2s'>
+							<img src="assets/nlp.jpg" alt="img30"/>
 							<figcaption>
-								<h2>Project: <span>Fun!</span></h2>
+								<h2>Academic: <span>Next Word</span></h2>
 								<p class="icon-links">
-									<a href="#"><span class="icon-heart"></span></a>
+									<!-- <a href="#"><span class="icon-heart"></span></a> -->
 									<a href="#"><span class="icon-eye"></span></a>
-									<a href="#"><span class="icon-paper-clip"></span></a>
+									<!-- <a href="#"><span class="icon-paper-clip"></span></a> -->
 								</p>
-								<p class="description">Learn more about Mahdi's fun projects!</p>
+								<p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque impedit sapiente quas delectus ducimus modi adipisci assumenda excepturi laboriosam repellendus, architecto quaerat quis eos quibusdam libero quam quod doloribus similique!</p>
 							</figcaption>			
 						</figure>
 					</div>
@@ -286,16 +286,17 @@
 		</div> <!--nonVid -->
 	</div>  <!-- mainContainer -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery-2.1.1.min.js"></script>
+	<!-- <script src="js/jquery-2.1.1.min.js"></script> -->
+	<script src="js/jquery-3.2.1.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
 	<script src="js/wow.min.js"></script>
 	<script src="js/jquery.easing.1.3.js"></script>
 	<script src="js/jquery.isotope.min.js"></script>
 	<script src="js/jquery.bxslider.min.js"></script>
-	<script type="text/javascript" src="js/fliplightbox.min.js"></script>
+	<!-- <script type="text/javascript" src="js/fliplightbox.min.js"></script> -->
 	<script src="js/functions.js"></script>	
-	<script type="text/javascript">$('.portfolio').flipLightBox()</script>
-    
+	<!-- <script type="text/javascript">$('.portfolio').flipLightBox()</script> -->
+	<script	src='js/myCustom.js'> </script>
 </body>
 </html>

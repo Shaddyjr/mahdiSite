@@ -985,7 +985,7 @@ figure.effect-zoe figcaption {
 	top: auto;
 	bottom: 0;
 	padding: 1em;
-	height: 3.75em;
+	height: 4em;
 	background: #fff;
 	color: #3c4a50;
 	-webkit-transition: -webkit-transform 0.35s;
@@ -999,7 +999,7 @@ figure.effect-zoe h2 {
 }
 
 figure.effect-zoe p.icon-links a {
-	float: right;
+	/* float: right; */
 	color: #3c4a50;
 	font-size: 1.4em;
 }
@@ -1039,16 +1039,19 @@ figure.effect-zoe p.icon-links a span::before {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+figure.effect-zoe p.icon-links a span::before {
+	display: inline-block;
+	padding: 8px 10px;
+	font-family: 'feathericons';
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+figure.effect-zoe p.icon-links{
+	display: inline;
+}
 .icon-eye::before {
 	content: '\e000';
-}
-
-.icon-paper-clip::before {
-	content: '\e001';
-}
-
-.icon-heart::before {
-	content: '\e024';
 }
 
 figure.effect-zoe h2 {
@@ -1064,6 +1067,23 @@ figure.effect-zoe:hover h2,
 figure.effect-zoe:hover p.icon-links a {
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
+}
+
+figure.effect-zoe, figure.effect-zoe img{
+	-moz-transition: all .2s ease-in;
+	-o-transition: all .2s ease-in;
+	-webkit-transition: all .2s ease-in;
+	transition: all .2s ease-in;
+}
+
+figure.effect-zoe:hover{
+	background: rgba(18, 49, 17, 0.79);
+}
+
+
+
+figure.effect-zoe:hover img{
+	opacity: 0.3;
 }
 
 figure.effect-zoe:hover h2 {
