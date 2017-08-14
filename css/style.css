@@ -647,8 +647,7 @@ video{
 .para{
   overflow: hidden;
   /* height:500px; */
-  /* background-image: url("../assets/proper.jpg"); */
-  background-image: url("https://img02.deviantart.net/29e6/i/2017/141/8/e/pineapple_flower_by_yyfcukyy-db9ybd5.jpg");
+  background-image: url("../assets/proper.jpg"); 
   min-height: 500px; 
   background-attachment: fixed;
   /* background-position: center; */
