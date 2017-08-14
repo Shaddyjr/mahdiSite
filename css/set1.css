@@ -457,6 +457,10 @@ figure.effect-layla figcaption {
 	padding: 3em;
 }
 
+figcaption h2{
+	color:#312F2F;
+}
+
 figure.effect-layla figcaption::before,
 figure.effect-layla figcaption::after {
 	position: absolute;
@@ -1077,13 +1081,13 @@ figure.effect-zoe, figure.effect-zoe img{
 }
 
 figure.effect-zoe:hover{
-	background: rgba(18, 49, 17, 0.79);
+	background: rgba(0, 0, 0, 0.85);
 }
 
 
 
 figure.effect-zoe:hover img{
-	opacity: 0.3;
+	opacity: 0.2;
 }
 
 figure.effect-zoe:hover h2 {

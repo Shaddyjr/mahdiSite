@@ -70,7 +70,9 @@ hr {
 }
 a.navbar-brand span {
 	color:#fff;
-	font-size:35px;	
+  font-size:35px;
+  position: fixed;
+  top:22px;	
 }
 
 .navbar-collapse {
@@ -85,7 +87,7 @@ a.navbar-brand span {
 .navbar-fixed-top {
   top: 0;
   border-width: 0 0 0;
-  background-color:rgb(244, 111, 132);
+  background-color:#494040;
 }
 .nav-tabs {
   border-bottom:0; 
@@ -690,4 +692,8 @@ video{
 
 .instructions p{
   color:#E0FFDC;
+}
+
+#SKILLS{
+  color: #333;
 }

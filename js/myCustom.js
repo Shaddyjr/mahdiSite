@@ -19,11 +19,32 @@ skills.push(new Skill('Jasmine.js', .85));
 skills.push(new Skill('React.js',.5));
 skills.push(new Skill('SQL', .6));
 
+$.fn.extend({
+    animateCss: function (animationName) {
+        var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+        this.addClass('animated ' + animationName).one(animationEnd, function() {
+            $(this).removeClass('animated ' + animationName);
+        });
+        return this;
+    }
+});
+
 (()=>{
     let count = 0.3;
     for(let s of skills){
-        let text = `<p class='skill_pill wow bounceIn' data-wow-delay="${count}s">${s.name} : ${Math.round(s.amt*100)}% </p>`
-        $('.skills').append(text);
+        let obj;
+        if(Math.random()<.1){
+            obj = $(`<p class='skill_pill wow bounceIn' data-wow-delay="${count}s">${s.name} : ${Math.round(s.amt*100)}% </p>`);
+            obj.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+                obj.animateCss('hinge').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+                    obj.animateCss('bounceInUp');
+                });
+            });
+        }else{
+            obj = $(`<p class='skill_pill wow bounceIn' data-wow-delay="${count}s">${s.name} : ${Math.round(s.amt*100)}% </p>`);
+        }
+
+        $('.skills').append(obj);
         count+=.2;
     }
 })();
