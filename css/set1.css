@@ -1074,6 +1074,13 @@ figure.effect-zoe:hover p.icon-links a {
 }
 
 figure.effect-zoe, figure.effect-zoe img{
+	webkit-box-shadow: 7px 7px 26px 2px rgba(0,0,0,0.51);
+    -moz-box-shadow: 7px 7px 26px 2px rgba(0,0,0,0.51);
+    box-shadow: 7px 7px 26px 2px rgba(0,0,0,0.51);
+    border-radius: 42px 42px 42px 42px;
+    -moz-border-radius: 42px 42px 42px 42px;
+    -webkit-border-radius: 42px 42px 42px 42px;
+    border: 1px solid rgb(46, 130, 58);
 	-moz-transition: all .2s ease-in;
 	-o-transition: all .2s ease-in;
 	-webkit-transition: all .2s ease-in;
