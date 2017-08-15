@@ -31,19 +31,16 @@ $.fn.extend({
 
 (()=>{
     let count = 0.3;
+    let pick = skills[Math.floor(Math.random()*skills.length)];
     for(let s of skills){
-        let obj;
-        if(Math.random()<.1){
-            obj = $(`<p class='skill_pill wow bounceIn' data-wow-delay="${count}s">${s.name} : ${Math.round(s.amt*100)}% </p>`);
+        let obj = $(`<p class='skill_pill wow bounceIn' data-wow-delay="${count}s">${s.name} : ${Math.round(s.amt*100)}% </p>`);
+        if(pick==s){
             obj.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-                obj.animateCss('hinge').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-                    obj.animateCss('bounceInUp');
+                obj.delay(2000+10000*Math.random()).animateCss('hinge').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+                        obj.animateCss('bounceInUp');
                 });
             });
-        }else{
-            obj = $(`<p class='skill_pill wow bounceIn' data-wow-delay="${count}s">${s.name} : ${Math.round(s.amt*100)}% </p>`);
         }
-
         $('.skills').append(obj);
         count+=.2;
     }

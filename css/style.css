@@ -509,7 +509,8 @@ textarea#message{
 .picGrid {
   height: -webkit-fill-available;
   position: relative;
-  top:-20px;
+  /* top:-20px; */
+  padding-top:10px;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='88' height='24' viewBox='0 0 88 24'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='autumn' fill='%233bf900' fill-opacity='0.18'%3E%3Cpath d='M10 0l30 15 2 1V2.18A10 10 0 0 0 41.76 0H39.7a8 8 0 0 1 .3 2.18v10.58L14.47 0H10zm31.76 24a10 10 0 0 0-5.29-6.76L4 1 2 0v13.82a10 10 0 0 0 5.53 8.94L10 24h4.47l-6.05-3.02A8 8 0 0 1 4 13.82V3.24l31.58 15.78A8 8 0 0 1 39.7 24h2.06zM78 24l2.47-1.24A10 10 0 0 0 86 13.82V0l-2 1-32.47 16.24A10 10 0 0 0 46.24 24h2.06a8 8 0 0 1 4.12-4.98L84 3.24v10.58a8 8 0 0 1-4.42 7.16L73.53 24H78zm0-24L48 15l-2 1V2.18A10 10 0 0 1 46.24 0h2.06a8 8 0 0 0-.3 2.18v10.58L73.53 0H78z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
@@ -646,13 +647,27 @@ video{
 
 .para{
   overflow: hidden;
-  /* height:500px; */
   background-image: url("../assets/proper.jpg"); 
   min-height: 500px; 
   background-attachment: fixed;
-  /* background-position: center; */
+  background-position-y: 23%;
   background-repeat: no-repeat;
-  background-size: cover; 
+  background-size: cover;
+  text-align: right;
+}
+
+#name{
+  color:#2f3238;
+  font-family: 'Eczar', serif;
+  font-size: 3em;
+  text-align: right;
+  margin-top:9%;
+  margin-right:15%;
+}
+
+.grayout{
+  opacity: .75;
+  background-color: rgb(48, 133, 163);
 }
 
 .disc{
@@ -667,6 +682,7 @@ video{
 
 .nonVid{
   background-color: #494040;
+  padding-top:10px;
 }
 .skills{
   width: 150%;
@@ -681,13 +697,55 @@ video{
   text-align: center;
   border-radius: 25px;
   background: rgba(224, 241, 199, 0.89);
-  /* -webkit-box-shadow: inset 6px 6px 16px -5px rgba(0,0,0,1);
-  -moz-box-shadow: inset 6px 6px 16px -5px rgba(0,0,0,1);
-  box-shadow: inset 6px 6px 16px -5px rgba(0,0,0,1); */
+  -webkit-box-shadow: 3px 3px 12px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 3px 3px 12px 1px rgba(0,0,0,0.75);
+  box-shadow: 3px 3px 12px 1px rgba(0,0,0,0.75);
 }
 .disc .row {
   background-color: rgba(197, 196, 255, 0.38);
   height:30em;
+}
+
+.sexy_line{ 
+  display: block;
+  border: none;
+  height: 10px;
+  background: black;
+  background: linear-gradient( rgba(73, 64, 64,1), rgba(73, 64, 64,0));
+  position: absolute;
+  top: 60px;
+  /* margin-top: 50px; */
+  left: 0;
+  right: 0;
+}
+
+.sexy_line0{ 
+  display: block;
+  border: none;
+  height: 10px;
+  background: black;
+  background: linear-gradient( rgba(73, 64, 64,0), rgba(73, 64, 64,1));
+  position: relative;
+  margin-top: -20px;
+}
+.sexy_line1{ 
+  display: block;
+  border: none;
+  height: 10px;
+  background: black;
+  background: linear-gradient( rgba(73, 64, 64,1), rgba(73, 64, 64,0));
+  position: relative;
+  /* margin-top: -10px; */
+}
+
+.sexy_line2{ 
+  display: block;
+  border: none;
+  height: 10px;
+  background: black;
+  background: linear-gradient( rgba(73, 64, 64,0), rgba(73, 64, 64,1));
+  position: relative;
+  margin-top: -20px;
 }
 
 .instructions{
@@ -698,8 +756,11 @@ video{
   padding-top:1em;
 }
 
+.instructions+hr{
+  margin-bottom: 0;
+}
 .instructions p{
-  font-size: 1em;
+  font-size: 1.2em;
   color:#E0FFDC;
   padding:0;
   margin:0;
