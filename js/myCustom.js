@@ -29,6 +29,7 @@ $.fn.extend({
     }
 });
 
+//skillPills
 (()=>{
     let count = 0.3;
     let pick = skills[Math.floor(Math.random()*skills.length)];
@@ -44,4 +45,18 @@ $.fn.extend({
         $('.skills').append(obj);
         count+=.2;
     }
+})();
+
+//fading text
+(()=>{
+	$('.fader').each(function(){
+  	let words = $(this).text().split(" ");
+    $(this).empty();
+    let t = 0.05;
+    for(let word of words){
+    	$(this).append(`<span class='wow fadeInRight' data-wow-delay="${t}s">${word} </span>`);
+      t+=0.05;
+    }
+  })
+
 })();
