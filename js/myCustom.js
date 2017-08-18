@@ -46,17 +46,38 @@ $.fn.extend({
         count+=.2;
     }
 })();
-
+var x;
 //fading text
 (()=>{
-	$('.fader').each(function(){
-  	let words = $(this).text().split(" ");
-    $(this).empty();
-    let t = 0.05;
-    for(let word of words){
-    	$(this).append(`<span class='wow fadeInRight' data-wow-delay="${t}s">${word} </span>`);
-      t+=0.05;
-    }
-  })
-
+    $('.fader').each(function(){
+        let words = $(this).text().split(" ");
+        $(this).empty();
+        let t = 0.05;
+        let num = 0;
+        for(let word of words){
+            if($(this)[0].parentElement.getAttribute('data-wow-delay')){
+                num = Number($(this)[0].parentElement.getAttribute('data-wow-delay').replace('s',''));
+            }
+            $(this).append(`<span class='wow fadeInRight' data-wow-delay="${t+num}s">${word} </span>`);
+            t+=0.05;
+        }
+    })
 })();
+
+//changing background
+var header = $('.disc');
+
+var backgrounds = new Array(
+    'url(assets/best.jpg)'
+  , 'url(assets/butterfly.jpg)'
+  , 'url(assets/run.jpg)'
+);
+
+var current = 0;
+
+function nextBackground() {
+    current++;
+    current = current % backgrounds.length;
+    header.css('background-image', backgrounds[current]);
+}
+setInterval(nextBackground, 5000);

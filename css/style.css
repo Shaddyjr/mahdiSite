@@ -673,6 +673,8 @@ video{
 .disc{
   width:100%;
   background-image: url("../assets/plant.jpg");
+  -webkit-transition: background-image 2s;
+  transition: background-image 2s;
   min-height: 200px; 
   background-attachment: fixed;
   background-position: center;
