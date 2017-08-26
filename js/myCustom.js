@@ -65,19 +65,28 @@ var x;
 })();
 
 //changing background
-var header = $('.disc');
 
-var backgrounds = new Array(
-    'url(assets/best.jpg)'
-  , 'url(assets/butterfly.jpg)'
-  , 'url(assets/run.jpg)'
-);
+// var header = $('.disc');
 
-var current = 0;
+// let backgrounds = new Array(
+//     $('.disc1')
+//   , $('.disc2')
+//   , $('.disc3')
+// );
 
-function nextBackground() {
-    current++;
-    current = current % backgrounds.length;
-    header.css('background-image', backgrounds[current]);
-}
-setInterval(nextBackground, 5000);
+// let current = 0;
+
+// function nextBackground() {
+//     current++;
+//     current = current % backgrounds.length;
+//     header.css('background-image', backgrounds[current]);
+// }
+
+// function nextBackground(){
+//     backgrounds[current].css('opacity','0');
+//     current++;
+//     current = current % backgrounds.length;
+//     backgrounds[current].css('opacity','.5');
+// }
+
+// setInterval(nextBackground, 5000);

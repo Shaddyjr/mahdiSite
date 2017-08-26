@@ -670,17 +670,71 @@ video{
   background-color: rgb(48, 133, 163);
 }
 
+.row{
+  margin:0;
+}
+
+.disc.container{
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+}
+ul.disc{
+  position: relative;
+}
+/* softens background */
+.disc.container .row:before{
+  content: '';
+  position: relative;
+  bottom:-30em;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(118, 144, 164, 0.4);
+  z-index: 0;
+}
+
+
 .disc{
   width:100%;
-  background-image: url("../assets/plant.jpg");
-  -webkit-transition: background-image 2s;
-  transition: background-image 2s;
-  min-height: 200px; 
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; 
+  min-height: 30em;  
+  padding: 0;
 }
+/*----------------------------------------------   
+--Keyframes
+-----------------------------------------------  */
+@keyframes fade-out {
+  33%{
+   opacity: 1
+  }
+  66%{
+  opacity: 0
+  }
+}
+
+.disc li{ 	
+  min-height:30em;;
+  width:100%;
+  position: absolute;
+  top: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x:	50%;
+  background-attachment: fixed;
+  z-index: 0;
+  opacity: 0;
+  animation: fade-out 21s infinite both;
+  background-image: url('../assets/plant.jpg');
+ }
+
+ .disc li:nth-child(2){
+  background-image: url('../assets/best.jpg');
+  animation-delay: 7s;
+ }
+
+ .disc li:nth-child(3){
+  background-image: url('../assets/run.jpg');  
+  animation-delay: 14s;
+ }
 
 .nonVid{
   background-color: #494040;
@@ -704,8 +758,12 @@ video{
   box-shadow: 3px 3px 12px 1px rgba(0,0,0,0.75);
 }
 .disc .row {
-  background-color: rgba(197, 196, 255, 0.38);
+  /* background-color: rgba(197, 196, 255, 0.38); */
   height:30em;
+  position: absolute;
+  top:-30em;
+  margin-bottom: -30em;
+  width:100%;
 }
 
 .sexy_line{ 
@@ -770,4 +828,8 @@ video{
 
 #SKILLS{
   color: #333;
+}
+
+#algDesc{
+  top: -20em;
 }

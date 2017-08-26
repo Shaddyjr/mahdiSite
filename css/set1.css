@@ -29,7 +29,7 @@
 	max-width: 480px;
 	max-height: 360px;
 	width: 48%;
-	background: rgba(83, 73, 73, 0.81);
+	background: rgb(118, 144, 164);
 	text-align: center;
 	cursor: pointer;
 }
@@ -1014,13 +1014,14 @@ figure.effect-zoe:hover p.icon-links a:focus {
 }
 
 figure.effect-zoe p.description {
-	position: absolute;
-	bottom: 8em;
+	position: relative;
+	top: -18em;
 	padding: 2em;
 	color: #fff;
 	text-transform: none;
 	font-size: 90%;
 	opacity: 0;
+	width:100%;
 	-webkit-transition: opacity 0.35s;
 	transition: opacity 0.35s;
 	-webkit-backface-visibility: hidden; /* Fix for Chrome 37.0.2062.120 (Mac) */
