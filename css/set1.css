@@ -29,9 +29,9 @@
 	max-width: 480px;
 	max-height: 360px;
 	width: 48%;
-	background: rgb(118, 144, 164);
+	background: rgb(198, 204, 209);
 	text-align: center;
-	cursor: pointer;
+	/* cursor: pointer; */
 }
 
 .grid figure img {
@@ -39,7 +39,7 @@
 	display: block;
 	min-height: 100%;
 	max-width: 100%;
-	opacity: 0.4;
+	opacity: 0.75;
 }
 
 .grid figure figcaption {
@@ -1015,11 +1015,11 @@ figure.effect-zoe:hover p.icon-links a:focus {
 
 figure.effect-zoe p.description {
 	position: relative;
-	top: -18em;
+	top: -17em;
 	padding: 2em;
 	color: #fff;
 	text-transform: none;
-	font-size: 90%;
+	font-size: 1em;
 	opacity: 0;
 	width:100%;
 	-webkit-transition: opacity 0.35s;
@@ -1054,6 +1054,9 @@ figure.effect-zoe p.icon-links a span::before {
 }
 figure.effect-zoe p.icon-links{
 	display: inline;
+	position: relative;
+	top:.5em;
+	color:black;
 }
 .icon-eye::before {
 	content: '\e000';
