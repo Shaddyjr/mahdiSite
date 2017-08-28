@@ -597,20 +597,22 @@ textarea#message{
 }
 
 ul.social-network {
+  text-align: center;
+  padding:.25em 0;
 	list-style:none;
-	margin-top:-20px;
-	float:right;
+	/* margin-top:-20px; */
+	/* float:left; */
 	font-size:18px;	
-	margin-right:20px;
+	/* margin-right:20px; */
 }
 
 ul.social-network li {
 	display:inline;
 	margin: 0 15px;
-	color:#73f4fc;
+	color:rgb(46, 130, 58);
 }
 ul.social-network li a {	
-	color:#73f4fc;	
+	color:rgb(46, 130, 58);	
 }
 ul.social-network li a:hover {	
 	color:#fff;	
@@ -633,7 +635,7 @@ a.scrollup{
 }
 a.scrollup:hover{
 	opacity:1;
-	background-color:#36CBD4;
+	background-color:rgba(112, 198, 124, 0.55); ;
 	color:#fff;;	
 }
 
@@ -815,11 +817,12 @@ ul.disc{
 }
 
 .instructions h2{
-  padding-top:1em;
+  padding-top:.5em;
+  margin-top: 0; 
 }
 
-.instructions+hr{
-  margin-bottom: 0;
+.instructions hr{
+  margin: 0;
 }
 .instructions p{
   font-size: 1.2em;
@@ -835,4 +838,9 @@ ul.disc{
 
 #algDesc{
   top: -19em;
+}
+
+/* was missing clearfix */
+.content:after{
+  clear: both;
 }
