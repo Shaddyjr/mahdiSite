@@ -147,7 +147,7 @@ particlesJS("parts", {
     "move": {
       "enable": true,
       "speed": .5,
-      "direction": "bottom",
+      "direction": "top",
       "random": false,
       "straight": false,
       "out_mode": "out",

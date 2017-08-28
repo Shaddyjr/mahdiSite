@@ -988,6 +988,7 @@ figure.effect-sarah:hover p {
 figure.effect-zoe figcaption {
 	top: auto;
 	bottom: 0;
+	z-index: 4;
 	padding: 1em;
 	height: 4em;
 	background: #fff;
