@@ -1089,6 +1089,7 @@ figure.effect-zoe, figure.effect-zoe img{
 	-o-transition: all .2s ease-in;
 	-webkit-transition: all .2s ease-in;
 	transition: all .2s ease-in;
+	z-index: 3;
 }
 
 figure.effect-zoe:hover{

@@ -844,3 +844,8 @@ ul.disc{
 .content:after{
   clear: both;
 }
+.particles-js-canvas-el{
+  position: absolute;
+  top: -10px;
+  z-index: 2;
+}
