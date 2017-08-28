@@ -667,6 +667,15 @@ video{
   margin-right:15%;
 }
 
+@media (max-width: 1310px){
+  #name{
+    font-size: 2.5em;
+    text-align: center;
+    margin-right:0;
+
+  }
+}
+
 .grayout{
   opacity: .75;
   background-color: rgb(48, 133, 163);
@@ -848,4 +857,72 @@ ul.disc{
   position: absolute;
   top: -10px;
   z-index: 2;
+}
+
+/* glitch effect */
+/* use .error class */
+/* https://codepen.io/kaypooma/pen/ehfjC?page=4 */
+/* use :before and :after with keyframe animation
+with content of text */
+@keyframes noise {
+  0%, 3%, 5%, 42%, 44%, 100% {opacity: 1; transform: scaleY(1);}  
+  4.3% {opacity: 1; transform: scaleY(.5);}
+  43% {opacity: 1; transform: scaleX(.7);}
+}
+
+@keyframes noise-1 {
+  0%, 20%, 40%, 60%, 70%, 90% {opacity: 0;}
+  10% {opacity: .1;}
+  50% {opacity: .5; left: .1em;}
+  80% {opacity: .3;}
+  100% {opacity: .6; left: .2em;}
+}
+
+@keyframes noise-2 {
+  0%, 20%, 40%, 60%, 70%, 90% {opacity: 0;}
+  10% {opacity: .1;}
+  50% {opacity: .5; left:-.1em;}
+  80% {opacity: .3;}
+  100% {opacity: .6; left: -.2em;}
+}
+
+
+
+/* @keyframes noise-3 {
+  0%,3%,5%,42%,44%,100% {opacity: 1; transform: scaleY(1);}
+  4.3% {opacity: 1; transform: scaleY(4);}
+  43% {opacity: 1; transform: scaleX(10) rotate(60deg);}
+} */
+#glitch{
+  position: absolute;
+}
+
+.glitchy{
+  animation: noise 5s linear infinite;
+  z-index: 1;
+}
+.error:after {
+  content: "\f113";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  color: blue;
+  animation: noise-1 5s linear infinite;
+  z-index: 0;
+}
+
+.error:before {
+  content: "\f113";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  color: red;
+  animation: noise-2 5s linear infinite;
+  z-index: 0;
 }

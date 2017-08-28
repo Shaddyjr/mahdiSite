@@ -200,3 +200,9 @@ particlesJS("parts", {
   },
   "retina_detect": true
 });
+
+//helping glitch effect
+// $('.error').each(function(){
+//   var text = window.getComputedStyle(this,':before').getPropertyValue('content');
+//   $(this).attr('data-error',text);
+// })

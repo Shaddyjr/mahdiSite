@@ -1,2 +1,2 @@
-# myTemplate
-Basic template for my projects
+TODO LIST
+-add flyout email
