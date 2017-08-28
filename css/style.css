@@ -810,6 +810,8 @@ ul.disc{
 
 .instructions{
   text-align: center;
+  width:50%;
+  margin:0 auto;
 }
 
 .instructions h2{
@@ -827,7 +829,8 @@ ul.disc{
 }
 
 #SKILLS{
-  color: #333;
+  /* color: #333; */
+  mix-blend-mode: difference;
 }
 
 #algDesc{

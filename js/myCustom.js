@@ -64,29 +64,27 @@ var x;
     })
 })();
 
-//changing background
-
-// var header = $('.disc');
-
-// let backgrounds = new Array(
-//     $('.disc1')
-//   , $('.disc2')
-//   , $('.disc3')
-// );
-
-// let current = 0;
-
-// function nextBackground() {
-//     current++;
-//     current = current % backgrounds.length;
-//     header.css('background-image', backgrounds[current]);
-// }
-
-// function nextBackground(){
-//     backgrounds[current].css('opacity','0');
-//     current++;
-//     current = current % backgrounds.length;
-//     backgrounds[current].css('opacity','.5');
-// }
-
-// setInterval(nextBackground, 5000);
+$(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+  
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+  
+        // Store hash
+        var hash = this.hash;
+  
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (500) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top-60
+        }, 500, 'easeOutSine',function(){
+     
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      }
+    });
+  });
