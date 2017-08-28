@@ -507,7 +507,7 @@ textarea#message{
  ================= */
 
 .picGrid {
-  height: -webkit-fill-available;
+  /* height: -webkit-fill-available; */
   position: relative;
   /* top:-20px; */
   padding-top:10px;
@@ -598,7 +598,7 @@ textarea#message{
 
 ul.social-network {
   text-align: center;
-  padding:.25em 0;
+  padding:.5em 0;
 	list-style:none;
 	/* margin-top:-20px; */
 	/* float:left; */

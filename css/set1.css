@@ -12,17 +12,17 @@
 .grid {
 	position: relative;
 	margin: 0 auto;
-	padding: 1em 0 4em;
-	max-width: 1000px;
+	/* padding: 1em 0 4em; */
+	/* max-width: 1000px; */
 	list-style: none;
 	text-align: center;
-	
 }
 
 /* Common style */
 .grid figure {
 	position: relative;
-	float: left;
+	/* float: left; */
+	display: inline-block;
 	overflow: hidden;
 	margin: 10px 1%;
 	min-width: 320px;
@@ -1185,7 +1185,7 @@ figure.effect-chico:hover p {
 		text-align: center;
 	}
 	.grid figure {
-		display: inline-block;
+		/* display: inline-block; */
 		float: none;
 		margin: 10px auto;
 		width: 100%;
