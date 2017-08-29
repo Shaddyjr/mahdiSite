@@ -183,7 +183,7 @@ particlesJS("parts", {
         "distance": 100,
         "size": 2.5,
         "duration": .5,
-        "opacity": .65,
+        "opacity": .75,
         "speed": 4
       },
       "repulse": {
@@ -201,8 +201,11 @@ particlesJS("parts", {
   "retina_detect": true
 });
 
-//helping glitch effect
-// $('.error').each(function(){
-//   var text = window.getComputedStyle(this,':before').getPropertyValue('content');
-//   $(this).attr('data-error',text);
-// })
+//helping email flyout effect
+$('.flyout-email').hover(function () {
+  // console.log($(this).attr('class'));
+          $(this).parent().next().addClass('fadeInRight');
+        }, function () {
+          $(this).parent().next().addClass('fadeOutRight').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',()=>$(this).parent().next().removeClass('fadeOutRight'));
+          $(this).parent().next().removeClass('fadeInRight');
+      });

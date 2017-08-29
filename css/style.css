@@ -926,3 +926,19 @@ with content of text */
   animation: noise-2 5s linear infinite;
   z-index: 0;
 }
+
+/* flyout email */
+.email{
+  opacity:0;
+  display: inline-block;
+  margin: 10px;
+  padding: 0;
+  position: absolute;
+  transition: opacity 1s;
+  transition-delay: .3s;
+  animation-delay: .3s;
+}
+
+.email:hover{
+  opacity: 1;
+}
