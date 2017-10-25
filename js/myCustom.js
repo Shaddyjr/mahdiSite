@@ -1,8 +1,8 @@
-class Skill{
-    constructor(name, amt){
-        this.name = name;
-        this.amt=amt
-    }
+class Skill {
+  constructor(name, amt) {
+    this.name = name;
+    this.amt = amt
+  }
 }
 
 let skills = [];
@@ -16,78 +16,78 @@ skills.push(new Skill('Git', .85));
 skills.push(new Skill('jQuery', .75));
 skills.push(new Skill('p5.js', .9));
 skills.push(new Skill('Jasmine.js', .85));
-skills.push(new Skill('React.js',.5));
+skills.push(new Skill('React.js', .5));
 skills.push(new Skill('SQL', .6));
 
 $.fn.extend({
-    animateCss: function (animationName) {
-        var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-        this.addClass('animated ' + animationName).one(animationEnd, function() {
-            $(this).removeClass('animated ' + animationName);
-        });
-        return this;
-    }
+  animateCss: function (animationName) {
+    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+    this.addClass('animated ' + animationName).one(animationEnd, function () {
+      $(this).removeClass('animated ' + animationName);
+    });
+    return this;
+  }
 });
 
 //skillPills
-(()=>{
-    let count = 0.3;
-    let pick = skills[Math.floor(Math.random()*skills.length)];
-    for(let s of skills){
-        let obj = $(`<p class='skill_pill wow bounceIn' data-wow-delay="${count}s">${s.name} : ${Math.round(s.amt*100)}% </p>`);
-        if(pick==s){
-            obj.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-                obj.delay(2000+10000*Math.random()).animateCss('hinge').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-                        obj.animateCss('bounceInUp');
-                });
-            });
-        }
-        $('.skills').append(obj);
-        count+=.2;
+(() => {
+  let count = 0.3;
+  let pick = skills[Math.floor(Math.random() * skills.length)];
+  for (let s of skills) {
+    let obj = $(`<p class='skill_pill wow bounceIn' data-wow-delay="${count}s">${s.name} : ${Math.round(s.amt * 100)}% </p>`);
+    if (pick == s) {
+      obj.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
+        obj.delay(2000 + 10000 * Math.random()).animateCss('hinge').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
+          obj.animateCss('bounceInUp');
+        });
+      });
     }
+    $('.skills').append(obj);
+    count += .2;
+  }
 })();
 var x;
 //fading text
-(()=>{
-    $('.fader').each(function(){
-        let words = $(this).text().split(" ");
-        $(this).empty();
-        let t = 0.05;
-        let num = 0;
-        for(let word of words){
-            if($(this)[0].parentElement.getAttribute('data-wow-delay')){
-                num = Number($(this)[0].parentElement.getAttribute('data-wow-delay').replace('s',''));
-            }
-            $(this).append(`<span class='wow fadeInRight' data-wow-delay="${t+num}s">${word} </span>`);
-            t+=0.05;
-        }
-    })
+(() => {
+  $('.fader').each(function () {
+    let words = $(this).text().split(" ");
+    $(this).empty();
+    let t = 0.05;
+    let num = 0;
+    for (let word of words) {
+      if ($(this)[0].parentElement.getAttribute('data-wow-delay')) {
+        num = Number($(this)[0].parentElement.getAttribute('data-wow-delay').replace('s', ''));
+      }
+      $(this).append(`<span class='wow fadeInRight' data-wow-delay="${t + num}s">${word} </span>`);
+      t += 0.05;
+    }
+  })
 })();
 
-$(document).ready(function(){
-    // Add smooth scrolling to all links
-    $("a").on('click', function(event) {
-  
-      // Make sure this.hash has a value before overriding default behavior
-      if (this.hash !== "") {
-        // Prevent default anchor click behavior
-        event.preventDefault();
-  
-        // Store hash
-        var hash = this.hash;
-  
-        // Using jQuery's animate() method to add smooth page scroll
-        // The optional number (500) specifies the number of milliseconds it takes to scroll to the specified area
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top-60
-        }, 500, 'easeOutSine',function(){
-     
-          // Add hash (#) to URL when done scrolling (default click behavior)
-          window.location.hash = hash;
-        });
-      }
-    });
+$(document).ready(function () {
+  // Add smooth scrolling to all links
+  $("a").on('click', function (event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (500) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top - 60
+      }, 500, 'easeOutSine', function () {
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    }
   });
+});
 
 //Particles.js
 particlesJS("parts", {
@@ -202,10 +202,14 @@ particlesJS("parts", {
 });
 
 //helping email flyout effect
-$('.flyout-email').hover(function () {
+$('.flyout-email').hover(
+  function () {
   // console.log($(this).attr('class'));
-          $(this).parent().next().addClass('fadeInRight');
-        }, function () {
-          $(this).parent().next().addClass('fadeOutRight').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',()=>$(this).parent().next().removeClass('fadeOutRight'));
-          $(this).parent().next().removeClass('fadeInRight');
-      });
+  $(this).parent().next().addClass('fadeInRight');
+  }, 
+  
+  function () {
+    $(this).parent().next().addClass('fadeOutRight').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', () => $(this).parent().next().removeClass('fadeOutRight'));
+    $(this).parent().next().removeClass('fadeInRight');
+  }
+);
