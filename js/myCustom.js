@@ -213,3 +213,13 @@ $('.flyout-email').hover(
     $(this).parent().next().removeClass('fadeInRight');
   }
 );
+
+function killSpin(){
+  $(".spinContainer").css("display","none")
+  $(".top").css("display","initial");
+  // let num = 0;
+  // while(num<1){
+  //   $(".mainContainer").css("opacity",num);
+  //   num+=0.1;
+  // }
+}
