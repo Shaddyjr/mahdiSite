@@ -14,7 +14,7 @@
       <p id="name">E-mail Mahdi</p>
     </div>
     <div class="formContainer">
-      <form method="POST" action="https://formspree.io/shaddyjr@gmail.com">
+      <form id="myForm" method="POST" action="https://formspree.io/shaddyjr@gmail.com">
         <div class="email">
           <input type="email" name="email" placeholder="Your email">
         </div>  
@@ -22,7 +22,24 @@
           <textarea name="message" placeholder="Your message"></textarea>
         </div>  
         <div class="submit">
-          <button type="submit" id="form_button">Send</button>
+          
+
+          <!-- SVG submit button -->
+          <div class="svg-wrapper">
+              <svg height="40" width="150">
+                <rect id="shape" height="40" width="150" />
+                <span id="text" class="spot" onclick="sendOut()">Send</span>
+                <script>
+                  function sendOut(){
+                    $("#myForm").submit();
+                  }
+                </script>
+                <div id="text">
+                    <!-- <button type="submit" id="form_button"><span class="spot">Send</span></button> -->
+                </div>
+              </svg>
+            </div>
+
         </div>  
       </form>
     </div>
