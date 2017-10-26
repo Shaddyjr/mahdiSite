@@ -90,7 +90,8 @@ a.navbar-brand span {
   background-color:#494040;
 }
 .nav-tabs {
-  border-bottom:0; 
+  border-bottom:0;
+  text-align: right; 
 }
 .nav > li > a {
   position: relative;
@@ -126,6 +127,7 @@ a.navbar-brand span {
 
 .nav-tabs > li {
     margin-bottom: 0;
+    display: inline-block;
 }
 
 .slider {
@@ -752,9 +754,9 @@ ul.disc{
   padding-top:10px;
 }
 .skills{
-  width: 150%;
+  /* width: 150%; */
   position: relative;
-  left: -25%;
+  /* left: -25%; */
   text-align: center;
 }
 .skill_pill{
@@ -950,6 +952,10 @@ with content of text */
 .spinContainer{
   background: #494040;
   height: 100vh;
+  position: fixed;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
 }
 
 #preloadedImages{

@@ -168,6 +168,7 @@
     font-family: 'Montserrat', Arial, sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
+    color: #F2F3EB;
   }
   
   body {
@@ -393,7 +394,7 @@
   padding: 0;
 }
 
-html,
+/* html,
 css {
   width: 100%;
   height: 100%;
@@ -404,23 +405,23 @@ css {
   margin-right: auto;
   text-align: center;
   margin-top: 15%;
-}
-
+} */
+/* 
 #workarea {
   position: absolute;
   width: 100%;
   height: 100%;
   background-color: #1e1a3e;
   font-family: Raleway;
-}
+} */
 
-#personal {
+/* #personal {
   color:white;
   text-decoration:none;
   position:absolute;
   bottom:15px;
   right:2%;
-}
+} */
 /*    start code for the actual button:         */
 
 
@@ -436,6 +437,9 @@ css {
   height: 100%;
   top: 0;
   left: 0;
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 1px;
 }
 /*
     This is the outer svg wrapper that the SVG itself will 
@@ -474,16 +478,10 @@ css {
 */
 
 #text {
-  margin-top: -35px;
+  margin-top: .75em;
   text-align: center;
 }
 
-#text a {
-  color: white;
-  text-decoration: none;
-  font-weight: 100;
-  font-size: 1.1em;
-}
 /* 
     Changing the shape on hover. I change the color of the stroke,
 make it thinner, then set it to again wrap around the entire parent element.
@@ -494,6 +492,6 @@ make it thinner, then set it to again wrap around the entire parent element.
 /*   stroke-linecap:"round"; */
   stroke-width: 4px;
 /*   stroke-dashoffset: 10px; */
-  stroke: #06D6A0;
+  stroke: #F2F3EB;
 
 }

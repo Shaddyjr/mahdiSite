@@ -3703,7 +3703,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-bottom: 1px solid #ddd;
 }
 .nav-tabs > li {
-  float: left;
+  /* float: left; */
   margin-bottom: -1px;
 }
 .nav-tabs > li > a {
