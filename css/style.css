@@ -633,7 +633,8 @@ a.scrollup{
 	right:40px;	
 	opacity:0.5;
 	border-radius:50%;
-	z-index:999;
+  z-index:999;
+  border: 4px solid black;
 }
 a.scrollup:hover{
 	opacity:1;
@@ -673,7 +674,107 @@ video{
   opacity: .75;
   background-color: rgb(48, 133, 163);
 }
+
+.para hr{
+  display: none;
+}
+
+.instructions{
+  text-align: center;
+  width:50%;
+  margin:0 auto;
+}
+
+.instructions h2{
+  padding-top:.5em;
+  margin-top: 0; 
+}
+
+.instructions hr{
+  margin: 0;
+}
+.instructions p{
+  font-size: 1.2em;
+  color:#E0FFDC;
+  padding:0;
+  margin:0;
+}
+
+#SKILLS{
+  /* color: #333; */
+  mix-blend-mode: difference;
+}
+
+#algDesc{
+  top: -19em;
+}
 /* MEDIA */
+/* MEDIA */
+/* MEDIA */
+
+@media (max-width: 1025px){
+
+  .grid figure {
+    margin:0;
+  }
+
+  .instructions p{
+    display: none;
+  }
+
+  p.description{
+    display: none;
+  }
+  figure.effect-zoe:hover img {
+    opacity: 1;
+  }
+  figure.effect-zoe:hover {
+    background: unset; 
+  }
+
+
+  .content .grid figure.effect-zoe figcaption h2{
+    padding-top: 7px;
+    float:unset;
+
+  }
+
+  /* upper left */
+  /* .content:first-child .grid figure.effect-zoe:first-child figcaption h2{
+    color:yellow;
+  } */
+
+  /* upper right */
+  /* .content:first-child .grid figure.effect-zoe:last-child figcaption h2{
+    color:pink;
+  } */
+
+  /* lower left */
+  /* .content:last-child .grid figure.effect-zoe:first-child figcaption h2{
+    color:red;
+  } */
+
+  /* lower right */
+  /* .content:last-child .grid figure.effect-zoe:last-child figcaption h2{
+    color:blue;
+  } */
+  figure.effect-zoe figcaption {
+    height: 7em;
+    padding: 0;
+  }
+  figure.effect-zoe p.icon-links {
+    top: 0.85em;
+    width: 50%;
+    margin: 0 auto;
+    display:block;
+    letter-spacing: 1em;
+    position: unset;
+  }
+  figure.effect-zoe p.icon-links a {
+    font-size: 2.4em;
+  }
+}
+
 @media (max-width: 1000px){
 
   .col-md-6 {
@@ -694,10 +795,6 @@ video{
     min-height: 400px;
   }
 
-  .grid figure {
-    margin:0;
-  }
-
   .text-center p {
     color: #E0FFDC;
     font-size: 1.8em;
@@ -712,13 +809,13 @@ video{
   }
 }
 
-@media (max-width:900px){
+/* @media (max-width:900px){
   .para{
     min-height: 300px;
   }
-}
+} */
 
-@media (max-width: 875px){
+@media (max-width: 900px){
   #name{
     font-size: 3.2em;
     margin: 0;
@@ -726,7 +823,10 @@ video{
     padding-top: 1.5em;
     color: rgb(46, 130, 58);
   }
-
+  .para hr{
+    display:block;
+    border-width: 4px;
+  }
   .grayout{
     opacity: 1;
     background: initial;
@@ -759,12 +859,13 @@ video{
 
   .instructions h2{
     margin: 0;
+    padding-top: 0;
+    font-size: 3em;
   }
 
-  .instructions p{
+  .email.animated{
     display: none;
   }
-
 
 }
 
@@ -918,35 +1019,6 @@ ul.disc{
   margin-top: -20px;
 }
 
-.instructions{
-  text-align: center;
-  width:50%;
-  margin:0 auto;
-}
-
-.instructions h2{
-  padding-top:.5em;
-  margin-top: 0; 
-}
-
-.instructions hr{
-  margin: 0;
-}
-.instructions p{
-  font-size: 1.2em;
-  color:#E0FFDC;
-  padding:0;
-  margin:0;
-}
-
-#SKILLS{
-  /* color: #333; */
-  mix-blend-mode: difference;
-}
-
-#algDesc{
-  top: -19em;
-}
 
 /* was missing clearfix */
 .content:after{
