@@ -620,23 +620,22 @@ ul.social-network li a:hover {
 	color:#fff;	
 }
 
-a.scrollup{
-    color:#fff;
-	height:55px;
-	width:55px;
-	font-size:22px;
-	line-height:50px;
-	text-align:center;
-	text-decoration:none;
-	position:fixed;
-	bottom:10px;
-	right:40px;	
-	opacity:0.5;
-	border-radius:50%;
-  z-index:999;
-  border: 4px solid black;
+a.scrolling{
+  color: #fff;
+  height: 55px;
+  width: 55px;
+  font-size: 22px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  position: fixed;
+  bottom: 4px;
+  right: 14px;
+  opacity: 0.5;
+  border-radius: 50%;
+  z-index: 999;
 }
-a.scrollup:hover{
+a.scrolling:hover{
 	opacity:1;
 	background-color:rgba(112, 198, 124, 0.55); ;
 	color:#fff;;	
@@ -714,6 +713,16 @@ video{
 
 @media (max-width: 1025px){
 
+  .email.animated{
+    display: none;
+  }
+
+  li a{
+    font-size: 1.5em;
+  }
+  .nav-tabs {
+    text-align: center;
+  }
   .grid figure {
     margin:0;
   }
@@ -809,19 +818,38 @@ video{
   }
 }
 
-/* @media (max-width:900px){
-  .para{
-    min-height: 300px;
-  }
-} */
+@-webkit-keyframes nameBack {
+  0%{background-position:23% 0%}
+  50%{background-position:78% 100%}
+  100%{background-position:23% 0%}
+}
+@-moz-keyframes nameBack {
+  0%{background-position:23% 0%}
+  50%{background-position:78% 100%}
+  100%{background-position:23% 0%}
+}
+@keyframes nameBack { 
+  0%{background-position:23% 0%}
+  50%{background-position:78% 100%}
+  100%{background-position:23% 0%}
+}
 
 @media (max-width: 900px){
   #name{
+    mix-blend-mode: difference;
+    /* -webkit-text-stroke: 3px black;
+    text-shadow:
+        3px 3px 0 #000,
+      -1px -1px 0 #000,  
+       1px -1px 0 #000,
+       -1px 1px 0 #000,
+        1px 1px 0 #000; */
     font-size: 3.2em;
+    font-weight: bold;
     margin: 0;
     text-align: center;
     padding-top: 1.5em;
-    color: rgb(46, 130, 58);
+    /* color: rgb(46, 130, 58); */
   }
   .para hr{
     display:block;
@@ -831,14 +859,21 @@ video{
     opacity: 1;
     background: initial;
   }
-
-  nav{
+  
+  .top{
     display: none;
   }
+  
   /* no more immage */
   .para{
-    background-image: initial;
-    background-color: #494040;
+    background: linear-gradient(178deg, #159b32, #ec1111, #1133ec);
+    background-size: 600% 600%;
+    
+    -webkit-animation: nameBack 30s ease infinite;
+    -moz-animation: nameBack 30s ease infinite;
+    animation: nameBack 30s ease infinite;
+    /* background-image: initial; */
+    /* background-color: #494040; */
     min-height: 1px; /*takes size of text */
   }
 
@@ -863,21 +898,7 @@ video{
     font-size: 3em;
   }
 
-  .email.animated{
-    display: none;
-  }
-
 }
-
-/* @media (max-width: 800px){
-  #name{
-    font-size: 2.2em; 
-  }
-  .para{
-    min-height: 300px;
-  }
-
-} */
 
 .row{
   margin:0;
@@ -1183,14 +1204,42 @@ with content of text */
     font-size: 1.5em;
     word-spacing: 0.2em;
   }
+
+  .instructions h2{
+    padding-top: .25em;
+    margin: 0;
+    font-size: 3em;
+  }
+  
+  .fa-2x {
+    font-size: 3em;
+  }
 }
 
+@media (max-width: 700px){
+  ul.social-network li {
+    margin:0;
+  }
+
+  .col-md-6 {
+    width: 100%;
+    margin:0;
+  }
+  .box {
+    width: 100%;
+  }
+}
+@media (max-width: 820px){
+  a.scrolling{
+    display: none;
+  }
+}
 
 @media (max-width: 872px){
   .skill_pill {
-    font-size: 1.2em;
+    font-size: 2.2em;
     margin: 0 auto;
-    width: 200px;
+    width: 75%;
     display: block;
     border-top-style: solid;
     border-left-style: solid;
@@ -1230,4 +1279,37 @@ with content of text */
 
 .menu{
   margin:0;
+}
+
+nav{
+  display: none;
+}
+
+@media (max-width: 520px){
+  #name{
+    line-height: 1em;
+  }
+  
+  .social-network li:nth-child(3),.social-network li:nth-child(4),.social-network li:nth-child(5){
+    display: none;
+  }
+  
+  ul.social-network li {
+    margin: 1em;
+  }
+ 
+  .picGrid{
+    display: none;
+  }
+}
+
+@media (max-width: 615px){
+  .skill_pill {
+    width:100%
+  }
+}
+@media (max-width: 615px){
+  ul.social-network li {
+    margin: .25em;
+  }
 }

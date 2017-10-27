@@ -7,7 +7,8 @@ class Skill {
 
 let skills = [];
 
-skills.push(new Skill('JavaScript (ES5 & 6)', .9));
+// skills.push(new Skill('JavaScript (ES5 & 6)', .9));
+skills.push(new Skill('JS', .9));
 skills.push(new Skill('HTML', .85));
 skills.push(new Skill('CSS', .75));
 skills.push(new Skill('Ruby', .85));
@@ -91,10 +92,10 @@ $(document).ready(function () {
   // When window resizes
   $(window).resize(function(){
     var viewportWidth = $(window).width();
-    if (viewportWidth < 901) {
+    if (viewportWidth < 992) {
             $("a[aria-label]").removeClass("hint--rounded hint--top hint--small hint--bounce");
     }
-    if (viewportWidth >= 900) {
+    if (viewportWidth >= 992) {
             $("a[aria-label]").addClass("hint--rounded hint--top hint--small hint--bounce");
     }
 
@@ -229,5 +230,5 @@ $('.flyout-email').hover(
 
 function killSpin(){
   $(".spinContainer").css("display","none")
-  $(".top").css("display","initial");
+  $("nav").css("display","initial");
 }
