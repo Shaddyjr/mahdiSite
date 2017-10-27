@@ -1190,7 +1190,7 @@ figure.effect-chico:hover p {
 		/* display: inline-block; */
 		float: none;
 		margin: 10px auto;
-		width: 100%;
+		/* width: 100%; */
 	}
 }
 
