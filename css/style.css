@@ -154,6 +154,10 @@ a.navbar-brand span {
 	
 }
 
+.secondPic{
+  display:none;
+}
+
 .box {
 	text-align:center;
 }
@@ -787,8 +791,8 @@ video{
 @media (max-width: 1000px){
 
   .col-md-6 {
-    width: 75%;
-    margin-left: calc(25%/2);
+    width: 100%;
+    /* margin-left: calc(25%/2); */
   }
   hr{
     margin-top:5px!important;
@@ -806,10 +810,12 @@ video{
 
   .text-center p {
     color: #E0FFDC;
-    font-size: 1.8em;
+    font-size: 1.5em;
     letter-spacing: .02em;
     line-height: 1em;
     padding: 0;
+    font-style:italic;
+    word-spacing: 0.2em;
   }
 
   .text-center h2{
@@ -835,6 +841,19 @@ video{
 }
 
 @media (max-width: 900px){
+  .secondPic{
+    display: block;
+    text-align: center;
+  }
+  
+  .secondPic img{
+    width:50%;
+    background: rgb(118, 144, 164);
+    border: #494040 solid 2px;
+    border-radius: 17%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: .85;
+  }
   #name{
     mix-blend-mode: difference;
     /* -webkit-text-stroke: 3px black;
@@ -846,9 +865,9 @@ video{
         1px 1px 0 #000; */
     font-size: 3.2em;
     font-weight: bold;
-    margin: 0;
+    margin: 10px 0 0 0;
     text-align: center;
-    padding-top: 1.5em;
+    /* padding-top: 1.5em; */
     /* color: rgb(46, 130, 58); */
   }
   .para hr{
@@ -866,7 +885,8 @@ video{
   
   /* no more immage */
   .para{
-    background: linear-gradient(178deg, #159b32, #ec1111, #1133ec);
+    background-image: unset;
+    background: linear-gradient(178deg, rgba(46, 130, 58,0.85), rgba(73, 64, 64,0.85));
     background-size: 600% 600%;
     
     -webkit-animation: nameBack 30s ease infinite;
@@ -1212,7 +1232,7 @@ with content of text */
   }
   
   .fa-2x {
-    font-size: 3em;
+    font-size: 2em;
   }
 }
 
@@ -1285,11 +1305,19 @@ nav{
   display: none;
 }
 
-@media (max-width: 520px){
+
+@media (max-width: 490px){
+  .secondPic img{
+    width:90%;
+  }
+}
+@media (max-width: 546px){
   #name{
     line-height: 1em;
   }
-  
+}
+
+@media (max-width: 520px){
   .social-network li:nth-child(3),.social-network li:nth-child(4),.social-network li:nth-child(5){
     display: none;
   }
