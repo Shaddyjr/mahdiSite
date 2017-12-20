@@ -94,6 +94,24 @@ body{
     height:1em;
 }
 
+/* images */
+
+span img{
+    display: none;
+}
+
+span:hover img{
+    display: initial;
+    position: fixed;
+    top:10vw;
+    width:300px;
+
+}
+
+a{
+    text-decoration: none;
+    color: unset;
+}
 /* .scope-container{
     display: flex;
     flex-direction: column;
