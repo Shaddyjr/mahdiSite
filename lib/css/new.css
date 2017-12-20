@@ -1,0 +1,101 @@
+@font-face{
+    font-family:"Ubuntu";
+    src:url("../fonts/Ubuntu-Regular.ttf");
+}
+body{
+    margin:0;
+}
+
+.meta-container{
+    background-color: #5f0909;
+    font-family:Ubuntu,sans-serif;
+}
+.page{
+    background-color: #252525;
+    border-right-color: black;
+    border-left-color: black;
+    border: solid 2px;
+    width:85%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/* indenting */
+.i1{
+    padding-left: 2em;
+}
+
+.i2{
+    padding-left: 4em;
+}
+
+.i3{
+    padding-left: 6em;
+}
+
+.i4{
+    padding-left: 8em;
+}
+
+/* IDE theme styling */
+[class*=type]{
+    font-size: 2em;    
+}
+
+.type1{
+    /* class, constructor, this keywords */
+    color:rgb(71, 71, 247);
+    opacity: .5;
+    font-style: italic;
+}
+
+.type2{
+    /* class name */
+    color:rgb(27, 214, 214);
+    font-size: 3em;
+}
+
+.type3{
+    /* brackets and non-essentials */
+    color:white;
+    opacity: .5;
+}
+
+.type4{
+    /* variables and properties */
+    color: lightblue;
+}
+
+.type5{
+    /* strings */
+    color: rgb(214, 99, 22);
+    font-size: 1.5em;
+}
+
+.type6{
+    /* object methods */
+    color: yellow;
+    font-size: 2.5em;
+}
+
+.type7{
+    /* comments */
+    color:rgb(4, 99, 4);
+    font-size: 1em;
+}
+/* lines */
+
+.line{
+    display: block;
+    margin-left: 1em;
+}
+
+.newline{
+    height:1em;
+}
+
+/* .scope-container{
+    display: flex;
+    flex-direction: column;
+
+} */
