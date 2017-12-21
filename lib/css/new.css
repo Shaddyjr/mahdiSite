@@ -7,7 +7,7 @@ body{
 }
 
 .meta-container{
-    background-color: #5f0909;
+    background-color: black;
     font-family:Ubuntu,sans-serif;
 }
 .page{
@@ -18,8 +18,12 @@ body{
     width:85%;
     height: 100%;
     margin: 0 auto;
+    padding: 1.5em 1em;
 }
 
+span{
+    word-wrap: break-word;
+}
 /* indenting */
 .i1{
     padding-left: 2em;
@@ -37,6 +41,9 @@ body{
     padding-left: 8em;
 }
 
+.i5{
+    padding-left: 10em;
+}
 /* IDE theme styling */
 [class*=type]{
     font-size: 2em;    
@@ -59,6 +66,7 @@ body{
     /* brackets and non-essentials */
     color:white;
     opacity: .5;
+    font-size: 1.5em;
 }
 
 .type4{
@@ -70,6 +78,10 @@ body{
     /* strings */
     color: rgb(214, 99, 22);
     font-size: 1.5em;
+}
+
+a:not(:first-line){
+    text-indent: 2em;
 }
 
 .type6{
@@ -87,7 +99,7 @@ body{
 
 .line{
     display: block;
-    margin-left: 1em;
+    /* margin-left: 1em; */
 }
 
 .newline{
@@ -105,15 +117,21 @@ span:hover img{
     position: fixed;
     top:10vw;
     width:300px;
-
 }
 
 a{
     text-decoration: none;
     color: unset;
 }
+
+/* skills */
+.skills_container line{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 /* .scope-container{
     display: flex;
     flex-direction: column;
-
 } */

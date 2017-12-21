@@ -7,7 +7,7 @@ class Person{
     }
 
     about_me(){
-        this.about_me = "I am a human being (as far as I can tell). I was born and raised in New York City and wouldn't want to live anywhere else. When I'm not working I'm probably coding, watching a movie, or taking care of a baby. ";
+        this.about_me = "I am a human being (as far as I can tell). I was born and raised in New York City and wouldn't want to live anywhere else. When I'm not working I'm probably coding, watching a movie, or taking care of a baby.";
 
         this.favorite = {
             color: "red (the color of passion!)",
