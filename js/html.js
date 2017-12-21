@@ -4,11 +4,8 @@ class Person{
         this.name = "Mahdi Shadkamfarrokhi";
         this.img = "asset/mahdi.jpg";
         this.location = "New York City";
-    }
-
-    about_me(){
         this.about_me = "I am a human being (as far as I can tell). I was born and raised in New York City and wouldn't want to live anywhere else. When I'm not working I'm probably coding, watching a movie, or taking care of a baby.";
-
+    
         this.favorite = {
             color: "red (the color of passion!)",
             pet: "cat",
@@ -16,6 +13,25 @@ class Person{
             food: "quinoa salad",
             drink: "roasted brown rice green tea"
         }
+        this.skills = [
+            "JS",
+            "HTML",
+            "CSS",
+            "Ruby",
+            "R",
+            "Git",
+            "jQuery",
+            "p5.js",
+            "Jasmine.js",
+            "React.js",
+            "SQL",
+            "Python",
+            "Node.js",
+            "Bootstrap",
+            "Data Mining",
+            "Predictive Modeling",
+            "Bioinformatics tools and databases"
+        ];
     }
 
     experience(){
@@ -71,27 +87,6 @@ class Person{
         ];
     }
 
-    skills(){
-        this.skills = [
-            "JS",
-            "HTML",
-            "CSS",
-            "Ruby",
-            "R",
-            "Git",
-            "jQuery",
-            "p5.js",
-            "Jasmine.js",
-            "React.js",
-            "SQL",
-            "Python",
-            "Node.js",
-            "Bootstrap",
-            "Data Mining",
-            "Predictive Modeling",
-            "Bioinformatics tools and databases"
-        ];
-    }
 
     contact(){
         this.email = "shaddyjr@gmail.com";
@@ -103,3 +98,12 @@ class Person{
 }
 
 // Copyright © 2017 Mahdi Shadkamfarrokhi | All rights reserved
+let mahdi = new Person;
+
+$(function() {
+    $(".type2").typed({
+        strings: ["Person^2000","Coder^2000","Learner^2000","Developer^2000","Teacher^2000"],
+        typeSpeed: 400,
+        loop: true,
+    });
+});

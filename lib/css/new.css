@@ -131,6 +131,11 @@ a{
     flex-wrap: wrap;
 }
 
+/* typed.js */
+.typed-cursor {
+    color:white;
+}
+
 /* .scope-container{
     display: flex;
     flex-direction: column;
