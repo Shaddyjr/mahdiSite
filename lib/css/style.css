@@ -655,7 +655,7 @@ video{
 
 .para{
   overflow: hidden;
-  background-image: url("../assets/mahdi.jpg"); 
+  background-image: url("../../assets/mahdi.jpg"); 
   min-height: 500px; 
   background-attachment: fixed;
   background-position-y: 10%;
@@ -973,16 +973,16 @@ ul.disc{
   z-index: 0;
   opacity: 0;
   animation: fade-out 21s infinite both;
-  background-image: url('../assets/plant.jpg');
+  background-image: url('../../assets/plant.jpg');
  }
 
  .disc li:nth-child(2){
-  background-image: url('../assets/best.jpg');
+  background-image: url('../../assets/best.jpg');
   animation-delay: 7s;
  }
 
  .disc li:nth-child(3){
-  background-image: url('../assets/run.jpg');  
+  background-image: url('../../assets/run.jpg');  
   animation-delay: 14s;
  }
 
