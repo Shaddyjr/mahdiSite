@@ -32,6 +32,8 @@ class Person{
             "Predictive Modeling",
             "Bioinformatics tools and databases"
         ];
+        this.experience();
+        this.contact();
     }
 
     experience(){
@@ -98,6 +100,7 @@ class Person{
 }
 
 // Copyright © 2017 Mahdi Shadkamfarrokhi | All rights reserved
+
 let mahdi = new Person;
 
 $(function() {

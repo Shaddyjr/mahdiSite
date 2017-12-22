@@ -655,7 +655,7 @@ video{
 
 .para{
   overflow: hidden;
-  background-image: url("../assets/proper.jpg"); 
+  background-image: url("../assets/mahdi.jpg"); 
   min-height: 500px; 
   background-attachment: fixed;
   background-position-y: 10%;
@@ -1164,12 +1164,12 @@ with content of text */
   z-index: 1000;
 }
 
-#preloadedImages{
+/* #preloadedImages{
     width: 0px;
     height: 0px;
     display: inline;
     background-image: url(../assets/proper.jpg);
-}
+} */
 
 @media (max-width: 1249px){
   .disc.container .row:before {
