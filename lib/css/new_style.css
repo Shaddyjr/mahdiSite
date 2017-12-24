@@ -1,12 +1,13 @@
 body{
     margin: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .metacontainer{
-    display: flex;
+    /* overflow: scroll; */
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     padding-top: 80px;
 }
 
@@ -17,10 +18,10 @@ body{
     text-align: center;
 }
 
-.fixed-head > *{
+/* .fixed-head > *{
     display: inline-block;
     vertical-align: middle;
-}
+} */
 
 .expander{
     position: fixed;
@@ -48,8 +49,20 @@ body{
 
 .top{
     text-align: center;
+    position: relative;
+    height:400px;
+    /* should be same as img */
+    overflow:hidden;
 }
 
-.img-switch img{
-    width: 500px;
+.center{
+    position: absolute;
+    left:50%;
+}
+
+.para-img{
+    position: relative;
+    top:0;
+    left:-50%;
+    height:400px;
 }
