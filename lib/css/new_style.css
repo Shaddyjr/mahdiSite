@@ -1,6 +1,7 @@
 body{
     margin: 0;
-    /* overflow: hidden; */
+    color:#f9f5f2;
+    text-align: center;
 }
 
 .metacontainer{
@@ -11,17 +12,40 @@ body{
     padding-top: 80px;
 }
 
+/* standard background */
+.fixed-head,body{
+    background-color: #464541;
+}
+
+
+.top{
+    background-color: #bea790;
+}
+
+.bottom-fade{
+    box-shadow: 0 0 5px 3px #464541;
+}
+
+.top-fade{
+    position: relative;
+    box-shadow: 0 -5px 3px 0 #464541;;
+}
+
+/* end of background */
+
 .fixed-head{
     position: fixed;
     height: 80px;
     width:100%;
     text-align: center;
+    z-index: 2;
 }
 
 /* .fixed-head > *{
     display: inline-block;
     vertical-align: middle;
 } */
+
 
 .expander{
     position: fixed;
@@ -65,4 +89,10 @@ body{
     top:0;
     left:-50%;
     height:400px;
+}
+
+.about h2{
+    margin: 0 0 15px 0;
+    padding-top: 15px;
+
 }
