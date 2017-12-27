@@ -119,6 +119,10 @@ a:not(:first-line){
 
 span img{
     display: none;
+    border-radius: 25px;
+    border: solid 4px black; /*same color as background*/
+    box-shadow: 0 0 10px 0 black;
+    z-index: 2;
 }
 
 span:hover img{
