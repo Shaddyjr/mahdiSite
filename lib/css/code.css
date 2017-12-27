@@ -4,10 +4,10 @@
 }
 body{
     margin:0;
+    background-color: black;
 }
 
 .meta-container{
-    background-color: black;
     font-family:Ubuntu,sans-serif;
 }
 .page{
@@ -21,6 +21,10 @@ body{
     padding: 1.5em 1em;
 }
 
+/* expanded content */
+.expanded, .collapsed{
+    cursor: pointer;
+}
 
 .experience .line:not(:first-child):not(:last-child),.contact .line:not(:first-child):not(:last-child){
     display: none;
@@ -50,11 +54,11 @@ span{
     padding-left: 10em;
 }
 /* IDE theme styling */
-[class*=type]{
+[class*=type], .expanded>.method{
     font-size: 2em;    
 }
 
-.type1{
+.type1, .expanded>.method{
     /* class, constructor, this keywords */
     color:rgb(71, 71, 247);
     opacity: .5;
@@ -67,7 +71,7 @@ span{
     font-size: 3em;
 }
 
-.type3{
+.type3, .expanded > i{
     /* brackets and non-essentials */
     color:white;
     opacity: .5;
@@ -89,7 +93,7 @@ a:not(:first-line){
     text-indent: 2em;
 }
 
-.type6{
+.type6,.collapsed>.method, .collapsed > i{
     /* object methods */
     color: yellow;
     font-size: 2.5em;
@@ -141,7 +145,6 @@ a{
     color:white;
 }
 
-/* .scope-container{
-    display: flex;
-    flex-direction: column;
-} */
+.collapsed >i{
+    vertical-align: bottom;
+}

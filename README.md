@@ -8,4 +8,5 @@ https://codepen.io/collection/bxdaH/2/
 *Skills "Bingo" Card (with Graph.js) and parallax
 
 ##Code Site
-*Add final edits to new site
+*lighten colors
+*add button to switch between both sites

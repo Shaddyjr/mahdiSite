@@ -18,7 +18,7 @@ body{
 }
 
 .top{
-    background-color: #bea790;
+    background-color: #2d2017;
 }
 
 .bottom-fade{
@@ -27,8 +27,14 @@ body{
 
 .top-fade{
     position: relative;
-    box-shadow: 0 -5px 3px 0 #464541;;
+    box-shadow: 0 -5px 3px 0 #464541;
 }
+
+.top-fade.bottom-fade{
+    position: relative;
+    box-shadow: 0 -5px 3px 0 #464541, 0 0 5px 3px #464541;
+}
+
 
 /* end of background */
 
@@ -40,10 +46,9 @@ body{
     z-index: 2;
 }
 
-/* .fixed-head > *{
-    display: inline-block;
-    vertical-align: middle;
-} */
+.favs p{
+    margin: 0;
+}
 
 
 .expander{
@@ -93,5 +98,8 @@ body{
 .about h2{
     margin: 0 0 15px 0;
     padding-top: 15px;
+}
 
+.contact h2{
+    margin: 0;
 }
