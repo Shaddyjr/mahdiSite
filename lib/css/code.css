@@ -21,6 +21,11 @@ body{
     padding: 1.5em 1em;
 }
 
+
+.experience .line:not(:first-child):not(:last-child),.contact .line:not(:first-child):not(:last-child){
+    display: none;
+}
+
 span{
     word-wrap: break-word;
 }
