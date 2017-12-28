@@ -20,7 +20,7 @@ p, span, a{
 }
 
 .project a{
-    color:#2d2017;
+    color:#464541;
 }
 
 .contact a{
@@ -55,7 +55,7 @@ hr{
     background-color: #2d2017;
 }
 .skill-container, .work-container{
-    background-color:rgba(70, 69, 65, 0.85);
+    background-color:rgba(70, 69, 65, 0.95);
     border: solid 2px #2d2017;
     border-radius: 25px;
     width: 80%;
@@ -74,6 +74,7 @@ hr{
 
 .top-fade.bottom-fade{
     position: relative;
+    padding-bottom: 10px;
     box-shadow: 0 -5px 3px 0 #464541, 0 0 5px 3px #464541;
 }
 
@@ -117,17 +118,17 @@ hr{
 .fixed-head a{
     text-decoration: none;
     height: fit-content;
-    border: #f9f5f2 1px solid;
+    border: #d5bfa9 1px solid;
     background-color: #2d2017;
     border-radius: 15px;
     transition: .5s;
     padding: 5px;
-    color: #f9f5f2;
+    color: #d5bfa9;
 }
 .fixed-head a:hover{
     border: #2d2017 1px solid;
     color: #2d2017;
-    background-color: #f9f5f2;
+    background-color: #d5bfa9;
 }
 
 .top{
@@ -159,12 +160,12 @@ hr{
     margin: 0 auto;
 }
 
-.about h2, .contact h2, .projects-container h3, .project h4, .work-container h3{
+.about h2, .contact h2, .projects-container h3, .work-container h3{
     margin: 0;
     padding-top: 10px;
 }
 
-.skill-container h2, .experience h2{
+.skill-container h2, .experience h2, .project h4, .project h4{
     margin: 0;
 }
 
@@ -182,7 +183,7 @@ hr{
     margin: 0 auto;
 }
 
-.skill, .school, .job{
+.skill, .school, .job, .project{
     border: solid 2px;
     border-radius: 15px;
     border-color: #2d2017;
@@ -228,25 +229,31 @@ hr{
     align-items: center;
     justify-content: center;
 }
+.projects .parallax-container:last-child{
+    margin-bottom: 0;
+}
 
 .project{
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    border: solid 2px;
-    border-radius: 15px;
-    border-color: #2d2017;
-    background-color: rgba(249, 245, 242, 0.85);
-    color: #2d2017;
+    background-color: rgba(249, 245, 242, 0.96);
     width: 75%;
+    max-width: 600px;
     height: fit-content;
+    padding: 15px 0;
     /* min-height: 275px; */
 }
 
 .project p{
     margin: 0;
     padding: .5em 3em;
+    color:#464541;
+}
+
+.project h4{
+    color: #2d2017;
 }
 
 .proj-links{
@@ -274,6 +281,7 @@ hr{
 }
 .contact{
     padding-bottom: 40px;
+    background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.85)),url("../../assets/wood4.jpg");
 }
 .experience{
     padding-top: 15px;
