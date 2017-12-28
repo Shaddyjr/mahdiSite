@@ -1,7 +1,29 @@
+/* ==== Google font ==== */
+@import url('https://fonts.googleapis.com/css?family=Eczar|Gentium+Basic');
+/* font-family: 'Eczar', serif; */
+/* font-family: 'Gentium Basic', serif; */
 body{
     margin: 0;
     color:#f9f5f2;
     text-align: center;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Eczar', serif;
+    color: #d5bfa9;
+}
+
+p, span{
+    font-family: 'Gentium Basic', serif;
+    font-size: 20px;
+    line-height: 1.25em;
+}
+
+hr{
+    width: 50%;
+    margin: 5px auto;
+    border-width: 2px;
+    border-color: #2d2017;
 }
 
 .metacontainer{
@@ -19,6 +41,14 @@ body{
 
 .top{
     background-color: #2d2017;
+}
+.skill-container{
+    background-color:rgba(70, 69, 65, 0.85);
+    border: solid 2px #2d2017;
+    border-radius: 25px;
+    width: 80%;
+    margin: 45px auto;
+    padding: 15px 0;
 }
 
 .bottom-fade{
@@ -46,8 +76,19 @@ body{
     z-index: 2;
 }
 
+.favs {
+    width: fit-content;
+    margin: 0 auto;
+}
+
 .favs p{
+    text-align: left;
     margin: 0;
+}
+
+.favs > p > span{
+    text-transform: capitalize;
+    color: #d5bfa9;
 }
 
 
@@ -64,15 +105,17 @@ body{
 .fixed-head a{
     text-decoration: none;
     height: fit-content;
-    border: red 2px solid;
-    background-color: yellow;
+    border: #f9f5f2 1px solid;
+    background-color: black;
     border-radius: 15px;
     transition: .5s;
     padding: 5px;
+    color: #f9f5f2;
 }
 .fixed-head a:hover{
-    border: yellow 2px solid;
-    background-color: red;
+    border: black 1px solid;
+    color: black;
+    background-color: #f9f5f2;
 }
 
 .top{
@@ -95,11 +138,64 @@ body{
     height:400px;
 }
 
+.about{
+    padding-bottom: 20px;
+}
+
+.about .desc{
+    width:60%;
+    margin: 0 auto;
+}
+
 .about h2{
     margin: 0 0 15px 0;
     padding-top: 15px;
 }
 
-.contact h2{
+.contact h2, .skill-container h2{
     margin: 0;
+}
+
+.fixed-head h1{
+    margin: 15px 0 0 0;
+}
+
+
+
+.skills{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.skill{
+    border: red solid 2px;
+    border-radius: 15px;
+    padding: 5px 10px;
+    margin: 10px;
+}
+
+.parallax-container{
+    height: unset;
+}
+
+.projects .parallax-container{
+    width: 500px;
+    margin: 0 auto;
+}
+
+.education, .work{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.contacts{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    justify-content: space-around;
+    margin: 0 auto;
 }
