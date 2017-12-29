@@ -5,4 +5,7 @@ https://codepen.io/collection/bxdaH/2/
 ##Original Site Revamp
 *Add top image flip
 *add fuzzy top image
+*adding education coursera and flatiron
+*change up about me to include aspirations
+*freelance websites
 ##Code Site
