@@ -192,7 +192,7 @@ hr{
 }
 
 .skill, .job{
-    padding: 5px 10px;
+    padding: 5px 2em;
     margin: 10px;
 }
 
@@ -211,7 +211,7 @@ hr{
 }
 
 .job p{
-    color: #d5bfa9;
+    /* color: #d5bfa9; */
 }
 
 .parallax-container{
