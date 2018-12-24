@@ -1,5 +1,8 @@
-Personal Website for Mahdi Shadkam-Farrokhi  
+Personal Website
 [mahdis.pw](https://shaddyjr.github.io/mahdiSite)
 
 ## To Do List
-* Make responsive
+* Mobile first
+* Get pastel colors (using css variables)
+* Set up CRT screen overlay
+* Set up css classes
