@@ -46,7 +46,7 @@ a{
 }
 
 .cursor::after{
-    content: " ";
+    content: "";
     display: inline;
     border-left: solid 2px;
     animation: 1s blink step-end infinite;

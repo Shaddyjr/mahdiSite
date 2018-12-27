@@ -3,3 +3,5 @@ Personal Website
 
 ## To Do List
 * Google Analytics
+* refactor code
+* add crt scan
