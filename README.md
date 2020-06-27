@@ -7,6 +7,7 @@
 ### 6/27
 - Removed 404 ASC Apply Page
 - Added DOB project link
+- Updated LinkedIn link
 
 ### 12/27
 - Updated site to mobile-first design
