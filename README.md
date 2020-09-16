@@ -4,6 +4,9 @@
 ---
 
 ## Changelog
+### 9/16
+- Corrected LinkedIn link
+
 ### 6/27
 - Removed 404 ASC Apply Page
 - Added DOB project link
