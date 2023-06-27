@@ -6,6 +6,11 @@
 
 ## Changelog
 
+### 6/27/23
+
+- Add direct link to Bee Image Classifier Website
+- Remove link to Medium
+
 ### 3/7/23
 
 - Remove Twitter link
