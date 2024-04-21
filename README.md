@@ -6,6 +6,10 @@
 
 ## Changelog
 
+### 4/21/24
+
+- Use full email address
+
 ### 6/27/23
 
 - Add direct link to Bee Image Classifier Website
